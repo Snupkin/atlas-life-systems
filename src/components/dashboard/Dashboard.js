@@ -7,6 +7,7 @@ import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { dot, random } from 'mathjs';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
+import styles from '../../styles/DashboardStyles.module.css'
 
 class Dashboard extends Component { 
 
@@ -74,6 +75,10 @@ class Dashboard extends Component {
         return sortedArticles;
     }
 
+    combineBitmaps = (...args) => {
+        console.log('still need to develop combineBitmaps')
+    }
+
     render () { 
         // authentication protocol
         const { auth } = this.props;
@@ -91,17 +96,20 @@ class Dashboard extends Component {
         // method calls
         var mostRecentPHQ9Bitmap = this.getMostRecentQuizBitmap(phq9Bitmaps);
         var mostRecentGAD7Bitmap = this.getMostRecentQuizBitmap(gad7Bitmaps);
+        // var combineBitmaps = this.combineArticles(phq9SortedArticles, gad7SortedArticles);
+
 
         // var allSortedArticles = 
         var phq9SortedArticles = this.sortArticles(articles, mostRecentPHQ9Bitmap, filteredLibrarySize);
         var gad7SortedArticles = this.sortArticles(articles, mostRecentGAD7Bitmap, filteredLibrarySize);
+        // var combinedSortedArticles = this.sortArticles();
 
         var filteredSelection; // dropdown variable
 
         return (
             <div className="dashboard container">
                 <DropdownButton 
-                className="right" // moves button to top right
+                className={`right ${ styles.dropDown }`} // moves button to top right
                 id="dropdown-basic-button" // dropdown type
                 title = "Filter By">
                     {/* <Dropdown.Item href={allSortedArticles}>All Quizzes</Dropdown.Item> */}
