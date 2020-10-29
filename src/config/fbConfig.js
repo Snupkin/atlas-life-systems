@@ -1,3 +1,4 @@
+// Firebase config file
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/analytics'
@@ -5,7 +6,7 @@ import 'firebase/auth'
 import 'firebase/database'
 
  
- // Your web app's Firebase configuration
+ // Your web app's Firebase configuration - grabbed from firebase online
   var rrfConfig = {
     apiKey: "AIzaSyCeykn3-OAOhEE96oML2374DBOUju08-KM",
     authDomain: "moltres-v1.firebaseapp.com",

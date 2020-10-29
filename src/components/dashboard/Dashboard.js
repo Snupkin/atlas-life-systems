@@ -110,7 +110,7 @@ class Dashboard extends Component {
             <div className="dashboard container">
                 <DropdownButton 
                 className={`right ${ styles.dropDown }`} // moves button to top right
-                id="dropdown-basic-button" // dropdown type
+                id="dropdown-button-drop-down" // dropdown type
                 title = "Filter By">
                     {/* <Dropdown.Item href={allSortedArticles}>All Quizzes</Dropdown.Item> */}
                     <Dropdown.Item as="button" href={ filteredSelection=articles }>None</Dropdown.Item>
