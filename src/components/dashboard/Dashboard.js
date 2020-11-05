@@ -85,6 +85,7 @@ class Dashboard extends Component {
         // variable declarations
         const { phq9Bitmaps } = this.props;
         const { gad7Bitmaps } = this.props;
+        const { profile } = this.props;
         // quiz redirects if not taken - seems to work backwards?
         if (this.quizExists(phq9Bitmaps)) { return <Redirect to = '/phq9' /> };
         if (this.quizExists(gad7Bitmaps)) { return <Redirect to = '/gad7' /> };
@@ -118,7 +119,7 @@ class Dashboard extends Component {
                 </div>
 
                 <div className="welcomedate">
-                    <div class="welcome"> <h5>Hello! Welcome *insert name*</h5></div>
+                    <div class="welcome"> <h5>Hello! Welcome { profile.firstName }!</h5></div>
                     <div class="date"> 
                         <p>Date/Time:</p>
                         <p id="datetime">test</p>
@@ -131,7 +132,8 @@ class Dashboard extends Component {
                 </div>
 
                 <div class="row">
-                    <div class="col s3 l4">Test</div> 
+                    <div class="col s3 l4">
+                    { profile.initials }</div> 
                     <div class="col s3 l4">Test</div>
                     <div class="col s3 l4">Test</div>
                 </div>
@@ -150,7 +152,8 @@ const mapStateToProps = (state) => {
         articles: state.firestore.ordered.articles,
         phq9Bitmaps: state.firebase.profile.phq9Bitmaps,
         gad7Bitmaps: state.firebase.profile.gad7Bitmaps,
-        auth: state.firebase.auth
+        auth: state.firebase.auth,
+        profile: state.firebase.profile, 
      }
 }
 
