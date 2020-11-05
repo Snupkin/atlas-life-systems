@@ -8,7 +8,7 @@ import { compose } from 'redux';
 import { dot, random } from 'mathjs';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
 import Grid from '@material-ui/core/Grid';
-import { engagement } from '../quiz/Engagement/engagement';
+import { engagement } from '../quiz/engagement';
 import '../../styles/dashboard.css'
 
 class Dashboard extends Component { 
