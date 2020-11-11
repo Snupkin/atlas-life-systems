@@ -3,7 +3,7 @@ import React from 'react'
 export function engagement() {
     return(
         <ul className="right">
-            <h1 style="background:blue;color:white;">hello</h1>
+            <h1>hello</h1>
         </ul>
         
     )

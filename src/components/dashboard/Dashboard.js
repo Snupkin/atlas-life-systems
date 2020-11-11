@@ -121,21 +121,14 @@ class Dashboard extends Component {
                 <div className="welcomedate">
                     <div class="welcome"> <h5>Hello! Welcome { profile.firstName }!</h5></div>
                     <div class="date"> 
-                        <p>Date/Time:</p>
-                        <p id="datetime">test</p>
-
-                        <script> 
-                        var dt = new Date();
-                        document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
-                        </script>
+                        <p><b>Report:</b> {new Date().toLocaleDateString(navigator.language, {year: 'numeric', month: 'long', day: 'numeric' })}</p>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col s3 l4">
-                    { profile.initials }</div> 
-                    <div class="col s3 l4">Test</div>
-                    <div class="col s3 l4">Test</div>
+                    <div class="col s3 l4">{ engagement }</div> 
+                    <div class="col s3 l4"></div>
+                    <div class="col s3 l4"></div>
                 </div>
                 
                 

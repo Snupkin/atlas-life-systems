@@ -22,14 +22,16 @@ function Navbar(props) {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <div class='navbar'>
-          <span class='SideMenu'>
+        <div className='navbar'>
+          <span className='SideMenu'>
             <Link to='#' className='menu-bars'>
               <FaIcons.FaBars onClick={showSidebar} />
             </Link>
             </span>
             <span class='UserNav'> { links } </span>
         </div>
+
+        <div className='logo'><a href=""> </a></div>
 
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
