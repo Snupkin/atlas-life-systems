@@ -9,7 +9,7 @@
 
 .dashboard.container .searchbar {
     height: 36px;
-    background-color: #e5e5e5;
+    background-color: transparent;
 }
 
 .dashboard.container .welcomedate {
@@ -21,10 +21,10 @@
 
 .dashboard.container .welcomedate .welcome {
     float: left;
-    color: #1d64a0;
+    color: black;
 }
 
 .dashboard.container .welcomedate .date {
     float: right;
-    color: #1d64a0;
+    color: black;
 }

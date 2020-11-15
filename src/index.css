@@ -11,6 +11,24 @@ body {
   z-index: -2;
 }
 
+body::after {
+  content: "";
+  background-image: url('./images/bg.jpg');
+  opacity: 0.69;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
 /* body::after {
   content: "";
   background-image: url('./images/cg-logo.png');
@@ -30,24 +48,6 @@ body {
 }
 */
 
-body::after {
-  content: "";
-  background-color: #d6fff6 ;
-  opacity: 0.69;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;
-}
-
 form{
   padding: 20px;
   margin-top:60px;
@@ -56,8 +56,7 @@ form button, form h5{
   margin: 20px 0;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]),

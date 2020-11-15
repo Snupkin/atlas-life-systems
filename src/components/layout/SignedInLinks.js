@@ -9,7 +9,7 @@ export function SignedInLinks(props) {
     return(
         <ul className="right">
             <li><a href="/#" onClick={ props.signOut } className={ styles.links }>Sign Out</a></li>
-            <li><NavLink to='/' className='btn btn-floating z-depth-2 red lighten-2'>
+            <li><NavLink to='/' className='btn btn-floating z-depth-2 cyan darken-4'>
                 {props.profile.initials}
             </NavLink></li>
         </ul>

@@ -106,18 +106,6 @@ class Dashboard extends Component {
             
             <div className="dashboard container">
 
-                <div className="searchbar">
-                    <DropdownButton 
-                    className="right" // moves button to top right
-                    id="dropdown-basic-button" // dropdown type
-                    title = "Filter By">
-                        {/* <Dropdown.Item href={allSortedArticles}>All Quizzes</Dropdown.Item> */}
-                        <Dropdown.Item as="button" href={ filteredSelection=articles }>None</Dropdown.Item>
-                        <Dropdown.Item as="button" href={ filteredSelection=phq9SortedArticles }>PHQ-9</Dropdown.Item>
-                        <Dropdown.Item as="button" href={ filteredSelection=gad7SortedArticles }>GAD-7</Dropdown.Item>
-                    </DropdownButton>
-                </div>
-
                 <div className="welcomedate">
                     <div class="welcome"> <h5>Hello! Welcome { profile.firstName }!</h5></div>
                     <div class="date"> 
@@ -131,7 +119,18 @@ class Dashboard extends Component {
                     <div class="col s3 l4"></div>
                 </div>
                 
-                
+                <div className="searchbar">
+                    <DropdownButton 
+                    className="right" // moves button to top right
+                    id="dropdown-basic-button" // dropdown type
+                    title = "Filter By">
+                        {/* <Dropdown.Item href={allSortedArticles}>All Quizzes</Dropdown.Item> */}
+                        <Dropdown.Item as="button" href={ filteredSelection=articles }>None</Dropdown.Item>
+                        <Dropdown.Item as="button" href={ filteredSelection=phq9SortedArticles }>PHQ-9</Dropdown.Item>
+                        <Dropdown.Item as="button" href={ filteredSelection=gad7SortedArticles }>GAD-7</Dropdown.Item>
+                    </DropdownButton>
+                </div>
+
                 <div>
                     <ArticleLibrary articles = { filteredSelection }/>
                 </div>
