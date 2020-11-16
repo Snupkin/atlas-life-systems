@@ -1,8 +1,7 @@
 .navbar {
     background-color: transparent;
     height: 80px;
-    display: inline-flex;
-    justify-content: space-between;
+    display: relative;
     align-items: center;
     overflow: hidden;
     width: 100%;
@@ -12,21 +11,31 @@
     float: left;
   }
 
+div .navbar {
+  display: table !important;
+  width: 100% !important;
+  table-layout: fixed !important;
+  justify-content: center;
+}
+
+div .navbar span {
+  display: table-cell !important;
+  text-align: center !important;
+  justify-content: center;
+
+}
+
 .right {
     display: inline-flex;
     align-items: center;
 }
 
-.right .ul{
-    padding: 10px;
-}
-
 .navbar .logo img {
-  float: unset;
-  display: absolute;
-  align-items: center;
-  max-width: 5vh;
-  height: 5vh;
+  margin-top: 14.5705px;
+  margin-bottom: 14.5705px;
+  position: absolute;
+  max-width: 6vh;
+  height: 6vh;
 }
 
   .navbar .UserNav {
@@ -34,39 +43,31 @@
     margin-right: 3.8vh;
     display: absolute; 
     align-items: center;
+    margin-bottom: 14px;
   }
- 
-  .links {
-    font-family: calibri;
-    font-weight: 700;
-    font-size: 20px;
-    color: #4163a1;
-    text-shadow: 1px 2px #afdaf1;
-    position: relative;
-}
 
 .navbar .UserNav a:hover {
-  color:#00acc1 ;
+  color:#1e88e5 ;
 }
 
   .menu-bars {
-    margin-left: 2rem;
+    margin-left: 3.8vh;
     font-size: 2rem;
     background: transparent;
-    padding: 5%;
   }
 
   .menu-bars svg {
-    color: #006064  !important;
+    margin-top: 29.5px;
+    margin-bottom: 29.5px;
+    color: #1565c0 !important;
   }
 
   .menu-bars svg:hover {
-    color: #00acc1 !important;
+    color:  #1e88e5  !important;
   }
 
-
   .nav-menu {
-    background-color: #006064;
+    background-color: #0d47a1 ;
     width: 200px;
     height: 100vh;
     display: flex;
@@ -106,7 +107,7 @@
     }
     
     .nav-text a:hover {
-      background-color: #4dd0e1 ;
+      background-color: #64b5f6  ;
     }
     
     .nav-menu-items {
@@ -114,16 +115,12 @@
     }
   
   .navbar-toggle {
-    background-color: #80deea;
+    background-color: #bbdefb;
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: start;
     align-items: center;
-  }
-
-  .navbar-toggle a:hover {
-    background-color: #e0f7fa ;
   }
   
   span {
@@ -138,8 +135,4 @@
     position: fixed;
     top: 0px;
     width: 100%;
-}
-
-.UserNav {
-  align-items: flex-end;
 }

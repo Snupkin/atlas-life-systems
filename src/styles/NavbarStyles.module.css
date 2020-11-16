@@ -1,19 +1,8 @@
-.background {
-    background-image: url("../images/cloudy-sky.jpg");
-    background-size: cover;
-    resize: auto hidden;
-    overflow: auto visible;
-    width: 100%;
-    height: auto;
-    /* opacity: 0.9; */
-}
-
 .links {
     font-family: calibri;
     font-weight: 700;
     font-size: 20px;
-    color: #006064 ;
-    text-shadow: 1px 2px #b2ebf2;
+    color: #1565c0;
     display: inline-flex !important;
     align-items: center;
     justify-content: center;

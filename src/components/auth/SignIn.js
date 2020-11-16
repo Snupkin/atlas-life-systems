@@ -41,7 +41,7 @@ export class SignIn extends Component {
                         <input type="password" id="password" onChange = {this.handleChange} required/>
                     </div>
                     <div className="input-field">
-                        <button className = "btn cyan darken-4 z-depth-1">Login</button>
+                        <button className = "btn blue darken-3 z-depth-1">Login</button>
                         <div className="red-text center">
                             { authError ? <p>{ authError }</p> : null /* if theres an error, show to user */}
                         </div>

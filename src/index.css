@@ -66,3 +66,7 @@ textarea.materialize-textarea:focus:not([readonly]){
   border-color: #2c4cff;
   box-shadow: none;
 }
+
+text {
+  color: black;
+}

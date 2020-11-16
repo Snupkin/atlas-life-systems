@@ -56,7 +56,7 @@ export class SignUp extends Component {
                             <input type="date" id="dob"  onChange={this.handleChange} required/>
                     </div>
                     <div className="input-field">
-                        <button className="btn red lighten-2 z-depth-0">Sign Up</button>
+                        <button className="btn blue darken-3 z-depth-0">Sign Up</button>
                         <div className="red-text center">
                             { authError ? <p>{ authError }</p> : null }
                         </div>

@@ -7,7 +7,6 @@ import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { dot, random } from 'mathjs';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
-import Grid from '@material-ui/core/Grid';
 import { engagement } from '../quiz/engagement';
 import '../../styles/dashboard.css'
 
@@ -107,7 +106,7 @@ class Dashboard extends Component {
             <div className="dashboard container">
 
                 <div className="welcomedate">
-                    <div class="welcome"> <h5>Hello! Welcome { profile.firstName }!</h5></div>
+                    <div class="welcome"> <h4>Hello! Welcome { profile.firstName }!</h4></div>
                     <div class="date"> 
                         <p><b>Report:</b> {new Date().toLocaleDateString(navigator.language, {year: 'numeric', month: 'long', day: 'numeric' })}</p>
                     </div>
