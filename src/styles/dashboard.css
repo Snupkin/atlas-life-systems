@@ -14,3 +14,17 @@ div .dashboard.container {
 .btn:focus {
     background-color: #1565c0 !important;
 }
+
+button.dropdown-item {
+    color: black;
+    display: inline-flex;
+    font-weight: 600;
+    z-index: -1;
+    padding: 3px;
+    width:94.641px;
+    
+}
+
+button.dropdown-item:active{
+    background-color: #1565c0;
+}

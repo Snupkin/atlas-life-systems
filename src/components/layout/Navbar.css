@@ -9,6 +9,7 @@
   }
   .navbar .SideMenu {
     float: left;
+    width: 140.19px;
   }
 
 div .navbar {
@@ -123,8 +124,8 @@ div .navbar span {
     align-items: center;
   }
   
-  span {
-    margin-left: 16px;
+  .nav-text svg {
+    margin-right: 10px;
   }
 
 .content {

@@ -14,7 +14,7 @@ export default function ArticleLibrary({ articles }){
                     {/* This section should connect to the atlas library server and show unfiltered articles */}
                     { articles.map(article => { // map the articles into a grid
                         return(
-                            <Grid item xs={6} md={4} key={article.id}> 
+                            <Grid item xs={12} md={6} lg={4} key={article.id}> 
                                 <Link // tells the grid what information to use and which url to redirect
                                     to={{
                                         pathname: "/article/" + article.id,
