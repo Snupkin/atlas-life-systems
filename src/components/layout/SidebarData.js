@@ -18,7 +18,7 @@ export const SidebarData = [
   },
   {
     title: 'Quizzes',
-    path: '/gad7',
+    path: '/quizdirectory',
     icon: <FaIcons.FaListUl />,
     cName: 'nav-text'
   },
