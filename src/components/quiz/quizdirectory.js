@@ -1,46 +1,33 @@
-import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import PHQ9 from './PHQ9/PHQ9';
-import GAD7 from './GAD7/GAD7';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import { SidebarData } from './SidebarData';
+import SignedInLinks from './SignedInLinks';
+import SignedOutLinks from './SignedOutLinks';
 
-class quizdirectory extends React.Component {
-    render() {
-      return (
-        <div class="row">
-            <div class="container">
-                <div class="col s12 m6">
-                    <div class="card z-depth-1">
-                        <div class="card-content white-text">
-                            <span class="card-title blue-text text-darken-3">GAD-7 Anxiety Test Questionnaire</span>
-                            <p class='grey-text'>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="waves-effect waves-light btn"><i class="material-icons left">navigate_next</i>
-                                <NavLink class='white-text' to="/GAD7"> Take the Quiz</NavLink></a>
-                        </div>
-                    </div>
-                </div>
+import { firestoreConnect } from 'react-redux-firebase'
 
-                <div class="col s12 m6">
-                    <div class="card z-depth-1">
-                        <div class="card-content white-text">
-                            <span class="card-title blue-text text-darken-3">PHQ-9 Depression Test Questionnaire</span>
-                            <p class='grey-text'>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="waves-effect waves-light btn"><i class="material-icons left">navigate_next</i>
-                                <NavLink class='white-text' to="/PHQ9"> Take the Quiz</NavLink></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+function quizdirectory(props) {
+    const [quizdirectory, setQuizdirectory] = useState(false);
+    const { auth, profile } = props;
+  
+    return (
     
-            )
-        }
-    }
+    <div className="dashboard container">
 
-export default quizdirectory
+    <div className="welcomedate">
+        <div class="welcome"> <h4>Hello! Welcome { profile.firstName }!</h4></div>
+        <div class="date"> 
+            <p><b>Report:</b> {new Date().toLocaleDateString(navigator.language, {year: 'numeric', month: 'long', day: 'numeric' })}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s3 l4">{ engagement }</div> 
+        <div class="col s3 l4"></div>
+        <div class="col s3 l4"></div>
+    </div>
+}
+
+export default 
