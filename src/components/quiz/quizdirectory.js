@@ -1,7 +1,4 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import PHQ9 from './PHQ9/PHQ9';
-import GAD7 from './GAD7/GAD7';
 import { NavLink } from 'react-router-dom';
 
 class quizdirectory extends React.Component {
