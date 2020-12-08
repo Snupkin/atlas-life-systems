@@ -14,8 +14,7 @@ class quizdirectory extends React.Component {
                             I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a class="waves-effect waves-light btn"><i class="material-icons left">navigate_next</i>
-                                <NavLink class='white-text' to="/GAD7"> Take the Quiz</NavLink></a>
+                            <NavLink class='waves-effect waves-light btn white-text' to="/GAD-7"> Take the Quiz</NavLink>  
                         </div>
                     </div>
                 </div>
@@ -28,8 +27,7 @@ class quizdirectory extends React.Component {
                             I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a class="waves-effect waves-light btn"><i class="material-icons left">navigate_next</i>
-                                <NavLink class='white-text' to="/PHQ9"> Take the Quiz</NavLink></a>
+                            <NavLink class='waves-effect waves-light btn white-text' to="/PHQ9"> Take the Quiz</NavLink>  
                         </div>
                     </div>
                 </div>
