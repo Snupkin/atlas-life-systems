@@ -7,6 +7,7 @@ import './Navbar.css';
 import { IconContext } from 'react-icons';
 import SignedInLinks from './SignedInLinks';
 import SignedOutLinks from './SignedOutLinks';
+import { NavLink } from 'react-router-dom'
 import { connect} from 'react-redux';
 import { compose } from 'redux';
 import { firestoreConnect } from 'react-redux-firebase'
