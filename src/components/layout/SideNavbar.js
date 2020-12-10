@@ -11,17 +11,11 @@ import { connect} from 'react-redux';
 import { compose } from 'redux';
 import { firestoreConnect } from 'react-redux-firebase'
 
-
-function ShowSidebar(auth) {
-  const [sidebar, setSidebar] = useState(false);
-  return auth ? setSidebar(!sidebar) : setSidebar(sidebar)
-}
-
 function Navbar(props) {
   const [sidebar, setSidebar] = useState(false);
   const { auth, profile } = props;
-  var showSidebar = ShowSidebar(auth.uid);
   const links = auth.uid ? <SignedInLinks profile={profile}/> : <SignedOutLinks />;
+  const showSidebar = () => setSidebar(!sidebar);
 
   return (
     <>
