@@ -1,3 +1,5 @@
+// This component holds all of the redirects to different pages for the SideNav Bar
+
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
