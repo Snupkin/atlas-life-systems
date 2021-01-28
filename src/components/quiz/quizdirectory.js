@@ -27,7 +27,7 @@ class quizdirectory extends React.Component {
                     </div>
                 </div>
                 
-                <div class="col s12 m6"> {/* Creates a card that redirects to GAD-7 */}
+                <div class="col s12 m6"> {/* Creates a card that redirects to PHQ-9 */}
                     <div class="card z-depth-1">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="./images/logo.png" alt="this is a test" />
