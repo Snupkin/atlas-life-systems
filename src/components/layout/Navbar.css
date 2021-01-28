@@ -73,6 +73,7 @@ div .navbar span {
     color:  #1e88e5  !important;
   }
 
+
   .nav-menu {
     background-color: #0d47a1 ;
     width: 200px;
@@ -114,7 +115,7 @@ div .navbar span {
     }
     
     .nav-text a:hover {
-      background-color: #64b5f6  ;
+      background-color: #011220  ;
     }
     
     .nav-menu-items {

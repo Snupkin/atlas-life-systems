@@ -1,3 +1,5 @@
+// This component is the quiz directory - There are 2 quizzes currently in this directory (GAD-7 & PHQ-9)
+
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './quizdirectory.css';
@@ -6,8 +8,8 @@ class quizdirectory extends React.Component {
     render() {
       return (
         <div class="row">
-            <div class="container">
-                <div class="col s12 m6">
+            <div class="container"> 
+                <div class="col s12 m6"> {/* Creates a card that redirects to GAD-7 */}
                     <div class="card z-depth-1">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="./images/logo.png" alt="this is a test" />
@@ -25,7 +27,7 @@ class quizdirectory extends React.Component {
                     </div>
                 </div>
                 
-                <div class="col s12 m6">
+                <div class="col s12 m6"> {/* Creates a card that redirects to GAD-7 */}
                     <div class="card z-depth-1">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="./images/logo.png" alt="this is a test" />
